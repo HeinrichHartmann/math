@@ -33,6 +33,7 @@ email: "Heinrich@HeinrichHartmann.com"
 doi: "10.48550/arXiv.2606.26133"
 slug: "2026-Faa-Di-Bruno"
 publications:
+  pdf: "https://github.com/HeinrichHartmann/math/releases/download/2026-01-09-Faa-Di-Bruno/2026-01-09-Faa-Di-Bruno.pdf"
   GitHub: "https://github.com/HeinrichHartmann/math/releases/tag/2026-01-09-Faa-Di-Bruno"
   arXiv: "https://arxiv.org/abs/2606.26133"
   Zenodo: "https://doi.org/10.5281/zenodo.18203201"

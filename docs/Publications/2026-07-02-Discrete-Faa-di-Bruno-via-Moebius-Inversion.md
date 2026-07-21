@@ -46,6 +46,7 @@ doi: "10.5281/zenodo.21235166"
 arxiv: "2607.07742"
 slug: "2026-Moebius-Faa-di-Bruno"
 publications:
+  pdf: "https://github.com/HeinrichHartmann/math/releases/download/2026-07-02-Discrete-Faa-di-Bruno-via-Moebius-Inversion/2026-07-02-Discrete-Faa-di-Bruno-via-Moebius-Inversion.pdf"
   GitHub: "https://github.com/HeinrichHartmann/math/releases/tag/2026-07-02-Discrete-Faa-di-Bruno-via-Moebius-Inversion"
   arXiv: "https://arxiv.org/abs/2607.07742"
   Zenodo: "https://doi.org/10.5281/zenodo.21235166"

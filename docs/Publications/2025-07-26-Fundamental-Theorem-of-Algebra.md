@@ -12,6 +12,7 @@ date: "2025-07-26"
 status: "900 Published"
 target: blog
 publications:
+  pdf: "https://github.com/HeinrichHartmann/math/releases/download/2025-07-26-Fundamental-Theorem-of-Algebra/2025-07-26-Fundamental-Theorem-of-Algebra.pdf"
   GitHub: "https://github.com/HeinrichHartmann/math/releases/tag/2025-07-26-Fundamental-Theorem-of-Algebra"
   Zenodo: "https://doi.org/10.5281/zenodo.18009904"
 abstract: |
