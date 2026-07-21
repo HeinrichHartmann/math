@@ -1,6 +1,7 @@
 # Mathematics — Heinrich Hartmann
 
 Source repository for [heinrichhartmann.com/math](https://heinrichhartmann.com/math/).
+See [docs/Publications](docs/Publications/) for the list of articles.
 
 Mathematical articles written in Markdown with LaTeX math, 
 rendered as a static site via [MkDocs](https://www.mkdocs.org/) and [mkdocs-math](https://github.com/HeinrichHartmann/mkdocs-math). 
