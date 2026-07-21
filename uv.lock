@@ -339,7 +339,7 @@ wheels = [
 [[package]]
 name = "mkdocs-math"
 version = "0.1.0"
-source = { git = "https://github.com/HeinrichHartmann/mkdocs-math.git#ed2320d2b324f10de8ae3c48d04b2a6a78420d77" }
+source = { git = "https://github.com/HeinrichHartmann/mkdocs-math.git#ba9b2d41c6d870292c5ee9b57141c12fe1cbb6c1" }
 dependencies = [
     { name = "bibtexparser" },
     { name = "click" },
