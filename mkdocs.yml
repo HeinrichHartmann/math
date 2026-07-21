@@ -41,6 +41,8 @@ plugins:
   - redirects:
       redirect_maps:
         'index.md': 'Publications/index.md'
+        '100 Profile/index.md': 'Profile/index.md'
+        '200 Articles/index.md': 'Publications/index.md'
   - search:
       lang: en
 
