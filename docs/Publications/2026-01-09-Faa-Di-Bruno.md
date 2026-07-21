@@ -36,6 +36,9 @@ publications:
   GitHub: "https://github.com/HeinrichHartmann/math/releases/tag/2026-01-09-Faa-Di-Bruno"
   arXiv: "https://arxiv.org/abs/2606.26133"
   Zenodo: "https://doi.org/10.5281/zenodo.18203201"
+hide:
+  - outline
+  - navigation
 math:
   proof_style: expanded
 zenodo:
