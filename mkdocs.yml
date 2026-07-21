@@ -1,0 +1,67 @@
+site_name: "Heinrich Hartmann — Mathematics"
+site_url: "https://heinrichhartmann.com/math/"
+
+exclude_docs: |
+  **/_*
+
+theme:
+  name: material
+  language: en
+  palette:
+    primary: black
+    accent: gray
+  features:
+    - search.suggest
+    - navigation.tabs
+    - navigation.sections
+    - navigation.footer
+
+
+copyright: Copyright &copy; 2025 Heinrich Hartmann
+
+extra:
+  canonical_base: "https://heinrichhartmann.com/math/"
+  homepage: ./Profile/
+  social:
+    - icon: fontawesome/brands/mastodon
+      link: https://mastodon.social/@hhartmann
+
+nav:
+  - Publications:
+    - Publications/index.md
+  - Profile:
+    - Profile/index.md
+
+plugins:
+  - mkdocs-math:
+      preamble_file: "docs/preamble.tex"
+      bib_file: "meta/refs.bib"
+  - redirects:
+      redirect_maps:
+        'index.md': 'Publications/index.md'
+  - search:
+      lang: en
+
+markdown_extensions:
+  - meta
+  - footnotes
+  - toc:
+      toc_depth: 0
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - def_list
+  - md_in_html
+  - attr_list
+  - pymdownx.blocks.html
+  - pymdownx.arithmatex:
+      generic: true
+      inline_syntax: ['dollar', 'round']
+      block_syntax:  ['dollar', 'square', 'begin']
+      smart_dollar: true
+
+extra_css:
+  - stylesheets/extra.css
+
+extra_javascript:
+  - javascript/config.js
+  - https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js

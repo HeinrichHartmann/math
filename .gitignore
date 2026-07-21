@@ -1,0 +1,12 @@
+site/
+.cache/
+.venv/
+.direnv/
+__pycache__/
+*.pyc
+.DS_Store
+.claude/
+_pkg/
+build/
+dist/
+docs/javascript/mkdocs-math-proofs.js

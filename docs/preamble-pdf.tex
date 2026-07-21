@@ -1,0 +1,236 @@
+% ============================================
+% GENERAL / UNIVERSAL
+% Used throughout the documentation
+% ============================================
+
+% --- Basic Number Systems ---
+\newcommand{\IR}{\mathbb{R}} % Real numbers #listed
+\newcommand{\IC}{\mathbb{C}} % Complex numbers #listed
+\newcommand{\IN}{\mathbb{N}} % Natural numbers #listed
+\newcommand{\IZ}{\mathbb{Z}} % Integers #listed
+\newcommand{\IQ}{\mathbb{Q}} % Rational numbers #listed
+\newcommand{\IA}{\mathbb{A}} % Affine space #listed
+\newcommand{\IB}{\mathbb{B}} % Generic field #listed
+\newcommand{\ID}{\mathbb{D}} % Generic field #listed
+\newcommand{\IF}{\mathbb{F}} % Generic field #listed
+\newcommand{\IH}{\mathbb{H}} % Quaternions #listed
+\newcommand{\II}{\mathbb{I}} % Generic field #listed
+\newcommand{\IL}{\mathbb{L}} % Generic field #listed
+\newcommand{\IP}{\mathbb{P}} % Projective space #listed
+\newcommand{\IS}{\mathbb{S}} % Sphere #listed
+\newcommand{\IV}{\mathbb{V}} % Generic vector space #listed
+
+% --- Function Spaces ---
+\newcommand{\CINF}{\mathcal{C}^\infty} % Smooth (infinitely differentiable) functions #listed
+\newcommand{\CC}{\mathcal{C}} % C^k functions #listed
+\newcommand{\Ck}{\mathcal{C}^k} % C^k functions #listed
+\newcommand{\CK}{\mathcal{C}^K} % C^k functions #listed
+
+% --- Fundamental Operators ---
+\newcommand{\del}{\partial} % Partial derivative #listed
+\newcommand{\uDelta}{\underline{\Delta}} % Discrete difference operator #listed
+\newcommand{\Shift}{\mathrm{S}_\downarrow} % Shift operator #listed
+
+% --- Logical & Set Operations ---
+\newcommand{\IFF}{\Leftrightarrow} % If and only if #listed
+\newcommand{\Ind}{\mathbb{1}} % Indicator/characteristic function #listed
+\newcommand{\IndA}[1]{\mathbb{1}\lbrace #1 \rbrace} % Indicator with condition #listed
+\newcommand{\1}{\mathbb{1}} % Indicator shorthand #listed
+\newcommand{\Set}[2]{\left\{\, #1 \;\vert\; #2 \,\right\}} % Set-builder notation #listed
+\newcommand{\CSet}[2]{\#\{\, #1 \;\vert\; #2 \,\right\}} % Cardinality notation #listed
+\newcommand{\C}{\,\#} % Cardinality operator #listed
+
+% --- Limits & Categorical ---
+\newcommand{\limproj}{\varprojlim} % Inverse limit #listed
+\newcommand{\limind}{\varinjlim} % Direct limit #listed
+\newcommand{\Hom}{\mathrm{Hom}} % Homomorphism #listed
+\newcommand{\End}{\mathrm{End}} % Endomorphism #listed
+\newcommand{\Ext}{\mathrm{Ext}} % Ext functor #listed
+
+% --- Arrows & Relations ---
+\newcommand{\ra}{\rightarrow} % Right arrow #listed
+\newcommand{\lra}{\longrightarrow} % Long right arrow #listed
+\newcommand{\xlra}[1]{\overset{#1}{\lra}} % Labeled long arrow #listed
+\newcommand{\la}{\leftarrow} % Left arrow #listed
+\newcommand{\lla}{\longleftarrow} % Long left arrow #listed
+\newcommand{\mono}{\hookrightarrow} % Monomorphism #listed
+\newcommand{\epi}{\twoheadrightarrow} % Epimorphism #listed
+\newcommand{\isom}{\cong} % Isomorphism #listed
+\newcommand{\downto}{\searrow} % Diagonal arrow #listed
+
+% --- Tensor & Algebraic Structures ---
+\newcommand{\tensor}{\otimes} % Tensor product #listed
+\newcommand{\tensors}{\tensor\dots\tensor} % Multiple tensor products #listed
+\newcommand{\Tensor}{\bigotimes} % Big tensor product #listed
+\newcommand{\stensor}{\odot} % Symmetric tensor product #listed
+\newcommand{\vsum}{\oplus} % Direct sum #listed
+\newcommand{\Vsum}{\bigoplus} % Big direct sum #listed
+
+% --- Calligraphic Letters (Generic) ---
+\newcommand{\KA}{\mathcal{A}}
+\newcommand{\KB}{\mathcal{B}}
+\newcommand{\KC}{\mathcal{C}}
+\newcommand{\KD}{\mathcal{D}}
+\newcommand{\KF}{\mathcal{F}}
+\newcommand{\KH}{\mathcal{H}}
+\newcommand{\KI}{\mathcal{I}}
+\newcommand{\KL}{\mathcal{L}}
+\newcommand{\KN}{\mathcal{N}}
+\newcommand{\KP}{\mathcal{P}}
+\newcommand{\KQ}{\mathcal{Q}}
+\newcommand{\KR}{\mathcal{R}}
+\newcommand{\KS}{\mathcal{S}}
+\newcommand{\KV}{\mathcal{V}}
+\newcommand{\KZ}{\mathcal{Z}}
+
+% --- Fraktur Letters (Generic) ---
+\newcommand{\gc}{\mathfrak{C}}
+\newcommand{\gd}{\mathfrak{D}}
+\newcommand{\gM}{\mathfrak{M}}
+\newcommand{\gm}{\mathfrak{m}}
+\newcommand{\gf}{\mathfrak{f}}
+\newcommand{\gu}{\mathfrak{U}}
+\newcommand{\fa}{\mathfrak{a}}
+\newcommand{\fg}{\mathfrak{g}}
+\newcommand{\fn}{\mathfrak{n}}
+\newcommand{\fk}{\mathfrak{k}}
+\newcommand{\fm}{\mathfrak{m}}
+\newcommand{\fp}{\mathfrak{p}}
+
+% --- Text & Formatting ---
+\newcommand{\qtext}[1]{\quad\text{#1}\quad} % Quad spaced text #listed
+\newcommand{\stext}[1]{\;\text{#1}\;} % Small spaced text #listed
+\newcommand{\ssum}[1]{\sum_{\substack{#1}}} % Sum with substacked condition #listed
+\newcommand{\half}{\frac{1}{2}} % One-half #listed
+\newcommand{\floor}[1]{\lfloor #1 \rfloor} % Floor function #listed
+\newcommand{\ceil}[1]{\lceil #1 \rceil} % Ceiling function #listed
+\newcommand{\nl}{\\} % Newline #listed
+
+% --- Common Functions ---
+\newcommand{\id}{\mathrm{id}} % Identity function #listed
+\newcommand{\rk}{\mathrm{rk}} % Rank #listed
+\newcommand{\Ker}{\mathrm{Ker}} % Kernel #listed
+\newcommand{\Diff}{\mathrm{Diff}} % Diffeomorphism group #listed
+\newcommand{\Pic}{\mathrm{Pic}} % Picard group #listed
+\newcommand{\Spec}{\mathrm{Spec}} % Spectrum #listed
+\newcommand{\D}{\mathrm{D}} % Differential operator #listed
+\newcommand{\DP}{\mathrm{D_{\!+}}} % Positive differential #listed
+\newcommand{\DDP}{\mathrm{D^{\!+}}} % Upper differential #listed
+
+% --- Variants ---
+\newcommand{\vphi}{\varphi} % Variant phi #listed
+\newcommand{\sphi}{\phi} % Straight phi #listed
+\newcommand{\eps}{\varepsilon} % Epsilon variant #listed
+\newcommand{\pt}{*} % Point notation #listed
+\newcommand{\point}{*} % Point notation alt #listed
+
+% --- Set Operations ---
+\newcommand{\union}{\cup} % Union #listed
+\newcommand{\Union}{\bigcup} % Big union #listed
+\newcommand{\dotcup}{\ensuremath{\mathaccent\cdot\cup}} % Disjoint union #listed
+\newcommand{\dunion}{\dotcup} % Disjoint union alt #listed
+% \< and \> removed - conflict with LaTeX tabbing commands and unused in docs
+\newcommand{\inpart}[1]{\in\text{\part}(#1)} % In partition of #listed
+\newcommand{\trl}{\triangleleft} % Left triangle #listed
+\newcommand{\trr}{\triangleright} % Right triangle #listed
+
+% --- Misc ---
+\newcommand{\curly}[1]{\mathcal{#1}}
+\newcommand{\op}[1]{\mathrm{#1}}
+\newcommand{\Cat}[1]{\mathfrak{#1}}
+\newcommand{\cat}[1]{\mathbf{#1}}
+\newcommand{\CAT}[1]{\left\{\,\text{#1}\,\right\}}
+\newcommand{\CATii}[2]{\left\{\,\begin{array}{c}\text{#1}\\\text{#2}\end{array}\,\right\}}
+\newcommand{\Mon}{\mathrm{Mon}}
+\newcommand{\Lin}{\mathrm{Lin}}
+\newcommand{\ev}{\mathrm{ev}}
+\newcommand{\tc}{\prec_{\mathrm{tc}}}
+\newcommand{\tightlist}{\setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\newcommand{\QED}{\square} % End of proof #listed
+\renewcommand{\part}{\vdash} % Turnstile #listed (overrides LaTeX \part sectioning)
+\newcommand{\opart}{\models} % Semantic entailment #listed
+\newcommand{\Def}{\mathrm{Def}} % Bialgebra defect #listed
+
+% ============================================
+% CHAPTER 1: DIFFERENTIAL DUALITY
+% ============================================
+
+\newcommand{\Jet}{\mathbf{Jet}} % Jet space of C infinity germs #listed
+\newcommand{\jet}{\mathrm{jet}} % Jet functor #listed
+\newcommand{\E}{\mathbf{E}} % Space of smooth functions #listed
+\newcommand{\EE}{\mathbf{E}} % Space of smooth functions alt #listed
+
+% ============================================
+% CHAPTER 2: DISCRETE DUALITY
+% ============================================
+
+% --- From Affine Cubes ---
+\newcommand{\BC}{\mathbf{B}} % Affine Cube space #listed
+
+% --- From Cubes.md and affine cube space ---
+\newcommand{\BB}{\mathbb{B}} % Boolean lattice #listed
+\newcommand{\minelt}{\hat{0}} % Minimal element #listed
+\newcommand{\maxelt}{\hat{1}} % Maximal element #listed
+\newcommand{\sleq}{\subseteq} % Subset relation #listed
+\newcommand{\drk}{\mathrm{rk_{\Delta}}} % Discrete rank #listed
+\newcommand{\Cube}{\mathbf{Cube}} % Discrete cubes #listed
+\newcommand{\aprod}{\star} % Anchored product of cubes #listed
+\newcommand{\acoprod}{\Delta} % Anchored coproduct of cubes #listed
+\newcommand{\tcoprod}{\Delta^\tau} % Transport coproduct of cubes #listed
+\newcommand{\tprod}{\star^\tau} % Transport product of cubes #listed
+\newcommand{\Part}{\mathbf{Part}} % Partitions of a set #listed
+\newcommand{\vac}{{|0\rangle}} % Empty partition #listed
+
+% --- From Filtered Vector Spaces.md ---
+\newcommand{\gr}{\mathrm{gr}} % Graded/associated graded object #listed
+
+% ============================================
+% CHAPTER 3: ULTRA CALCULUS
+% ============================================
+
+\newcommand{\POS}{\mathbf{Pos}} % Growth domain spaces #listed
+\newcommand{\U}{\mathbf{U}} % Ultra regulator quotient #listed
+\newcommand{\IU}{\mathbb{U}} % Ultra regulator #listed
+\newcommand{\IG}{\mathbb{G}} % Growth profile #listed
+\newcommand{\Tame}{\mathbf{Tame}} % Tame growth functions #listed
+\newcommand{\Scale}{\mathrm{Scale}} % Scaling operator #listed
+\newcommand{\Bell}{\mathcal{B}} % Bell polynomials #listed
+\newcommand{\uexp}{\exp_+} % Exponential generating series #listed
+
+% --- Ultra Structures ---
+\newcommand{\Sym}{\mathbf{S}} % Symmetric functions/algebra #listed
+\renewcommand{\SS}{\Sym} % Symmetric functions alt #listed (overrides LaTeX \SS)
+\newcommand{\SP}{\Sym^+} % Positive symmetric functions #listed
+\newcommand{\SH}{\hat{\Sym}} % Completed symmetric functions #listed
+\newcommand{\SPH}{\hat{\Sym}^+} % Completed positive symmetric #listed
+
+% --- Ultra Operators ---
+\newcommand{\MIX}{\mathrm{Mix}} % Mixing operator #listed
+\newcommand{\BMIX}{\mathrm{BMix}} % Boolean mixing #listed
+\newcommand{\TMIX}{\mathrm{TMix}} % Transport mixing #listed
+\newcommand{\TBMIX}{\mathrm{TMix}} % Transport boolean mixing #listed
+\newcommand{\TRANS}{\mathrm{Trans}} % Transport operator #listed
+
+% --- Gauge & Equivalence ---
+\newcommand{\gaugeleq}{\preccurlyeq} % Gauge less-or-equal #listed
+\newcommand{\gaugeeq}{\asymp} % Gauge equivalence #listed
+\newcommand{\gaugegeq}{\preccurlygeq} % Gauge greater-or-equal #listed
+\newcommand{\tstar}{\circledast} % Tight star product #listed
+
+% --- Forward Differences ---
+\newcommand{\FD}{\blacktriangle} % Forward difference #listed
+\newcommand{\fd}{\FD} % Forward difference alt #listed
+\newcommand{\AC}{\square} % Associated character #listed
+
+% ============================================
+% OPERATORS (DeclareMathOperator)
+% ============================================
+
+\DeclareMathOperator{\Supp}{\mathrm{Supp}} % Support #listed
+\DeclareMathOperator{\Alt}{\Lambda} % Alternating/exterior #listed
+\DeclareMathOperator{\ad}{ad} % Adjoint representation #listed
+\DeclareMathOperator{\ch}{ch} % Chern character #listed
+\DeclareMathOperator{\td}{td} % Todd class #listed
+\DeclareMathOperator{\TD}{TD} % Todd operator #listed
+\DeclareMathOperator{\pr}{pr} % Projection #listed
+\DeclareMathOperator{\Map}{Map} % Mapping space #listed

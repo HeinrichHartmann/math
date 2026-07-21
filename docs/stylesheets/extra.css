@@ -1,0 +1,266 @@
+/* Math environments - just a side bar */
+div.mathenvironment {
+  border-left: 3px solid #ccc;
+  margin-left: -0.5rem;
+  padding-left: 0.5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Theorem environments - dark red sidebar */
+div.theorem {
+  border-left-color: #C76B6B;
+}
+
+/* Definition environments - pastel yellow sidebar */
+div.definition {
+  border-left-color: #F4E4A6;
+}
+
+/* Notation environments - same color as Definition */
+div.notation {
+  border-left-color: #F4E4A6;
+}
+
+/* Proposition and Lemma environments - dark grey/black sidebar */
+div.proposition,
+div.lemma {
+  border-left-color: #888888;
+}
+
+/* Example environments - pastel green sidebar */
+div.example {
+  border-left-color: #A8CCC0;
+}
+
+/* Anchor links in environment headlines */
+div.mathenvironment a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
+  background-color: transparent;
+}
+
+div.mathenvironment a:visited {
+  color: inherit;
+}
+
+div.mathenvironment a:active {
+  color: inherit;
+}
+
+div.mathenvironment a:hover {
+  text-decoration: underline;
+  color: inherit;
+  font-weight: inherit;
+}
+
+/* Outline styling - navigational element with light background and shadow */
+div.outline {
+  background-color: #f9f9f9;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.1rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Outline links - traditional link styling with underline */
+div.outline a {
+  text-decoration: underline;
+}
+
+/* Proof environments - collapsible */
+div.proof {
+  cursor: pointer;
+}
+
+div.proof-collapsed-header {
+  font-weight: normal;
+}
+
+span.proof-arrow {
+  display: inline-block;
+  margin-right: 0.3rem;
+}
+
+/* Help menu - Gmail style */
+.help-menu-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 10000;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+.help-menu-modal {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 10px 20px rgba(0, 0, 0, 0.15);
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh;
+  overflow-y: auto;
+  outline: none;
+}
+
+.help-menu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 24px;
+  border-bottom: 1px solid #e8eaed;
+}
+
+.help-menu-header h2 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  color: #202124;
+}
+
+.help-menu-close {
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: #5f6368;
+  cursor: pointer;
+  padding: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.help-menu-close:hover {
+  background-color: #f8f9fa;
+}
+
+.help-menu-content {
+  padding: 20px 24px;
+}
+
+.help-menu-section {
+  margin-bottom: 24px;
+}
+
+.help-menu-section:last-child {
+  margin-bottom: 0;
+}
+
+.help-menu-section h3 {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: #5f6368;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.help-menu-item {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  font-size: 14px;
+  color: #202124;
+}
+
+.help-menu-item:last-child {
+  margin-bottom: 0;
+}
+
+.help-menu-item kbd {
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  border-radius: 3px;
+  padding: 3px 8px;
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: 500;
+  color: #3c4043;
+  white-space: nowrap;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.help-menu-item span {
+  flex: 1;
+}
+
+/* H1 heading with copy button */
+.md-typeset h1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Copy as markdown button */
+.copy-as-markdown-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-size: 16px;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+  margin-left: 16px;
+  margin-right: -50px;
+  flex-shrink: 0;
+}
+
+.copy-as-markdown-btn:hover {
+  opacity: 0.7;
+}
+
+/* Toast notification */
+.copy-toast {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  background-color: #323232;
+  color: white;
+  padding: 12px 16px;
+  border-radius: 4px;
+  font-size: 14px;
+  z-index: 9999;
+  animation: fadeInOut 2s ease-in-out;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
+  }
+  10%, 90% {
+    opacity: 1;
+  }
+}
+
+/* Hide right TOC sidebar - force override Material theme's display:block */
+.md-sidebar--secondary {
+  display: none !important;
+}
+
+/* Expand content area with no max-width constraint */
+.md-content {
+  max-width: none;
+}
+
+/* Fix MathJax CHTML rendering in Firefox */
+.arithmatex {
+  font-family: "MathJax_Main", serif !important;
+}
+
+/* Blockquote styling - keep text black, only indent and border */
+.md-typeset blockquote {
+  color: var(--md-default-fg-color);
+}
