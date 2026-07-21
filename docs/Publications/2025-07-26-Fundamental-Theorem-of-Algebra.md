@@ -12,6 +12,7 @@ date: "2025-07-26"
 status: "900 Published"
 target: blog
 publications:
+  GitHub: "https://github.com/HeinrichHartmann/math/releases/tag/2025-07-26-Fundamental-Theorem-of-Algebra"
   Zenodo: "https://doi.org/10.5281/zenodo.18009904"
 abstract: |
   We give a very short proof of the Fundamental Theorem of Algebra using a one-parameter deformation and a discriminant-locus argument.

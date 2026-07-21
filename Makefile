@@ -36,6 +36,7 @@ release-%: pdf-%
 	open('/tmp/release-notes.txt','w').write(notes)"
 	gh release create "$*" \
 		"$(PDF_DIR)/$*.pdf" \
+		"$(ARTICLES_DIR)/$*.md" \
 		--title "$$(cat /tmp/release-title.txt)" \
 		--notes "$$(cat /tmp/release-notes.txt)"
 

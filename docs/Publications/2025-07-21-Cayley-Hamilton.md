@@ -12,6 +12,7 @@ slug: "2025-Cayley-Hamilton"
 status: "900 Published"
 target: blog
 publications:
+  GitHub: "https://github.com/HeinrichHartmann/math/releases/tag/2025-07-21-Cayley-Hamilton"
   Zenodo: "https://doi.org/10.5281/zenodo.18016109"
 hide:
 - outline
