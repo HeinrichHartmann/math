@@ -10,3 +10,4 @@ _pkg/
 build/
 dist/
 docs/javascript/mkdocs-math-proofs.js
+deploy.sh
