@@ -44,6 +44,9 @@ plugins:
   - search:
       lang: en
 
+hooks:
+  - scripts/hooks.py
+
 markdown_extensions:
   - meta
   - footnotes
