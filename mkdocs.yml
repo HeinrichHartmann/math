@@ -15,6 +15,7 @@ theme:
     - navigation.tabs
     - navigation.sections
     - navigation.footer
+    - navigation.indexes
 
 
 copyright: Copyright &copy; 2025 Heinrich Hartmann
