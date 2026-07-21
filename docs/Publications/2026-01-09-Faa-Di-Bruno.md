@@ -26,6 +26,7 @@ abstract: |
 
   As an application, we give a general higher-order product rule. 
 
+description: We approach Faà di Bruno from the Taylor composition standpoint and derive all common forms in a short, self-contained article.
 bibliography: "../meta/refs.bib"
 orcid: "0000-0002-3929-2421"
 affiliation: "Hartmann IT GmbH"

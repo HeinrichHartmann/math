@@ -38,13 +38,14 @@ abstract: |
   Boolean finite differences, binomial grid formulas, infinitesimal Taylor algebras, and Fréchet derivatives thus appear 
   as four realizations of one Möbius-dual Faà di Bruno formula, connected by a flat family.
 
+description: A new discrete, closed-form Faà di Bruno formula.
 bibliography: ../meta/refs.bib
 orcid: 0000-0002-3929-2421
 affiliation: Hartmann IT GmbH
 email: Heinrich@HeinrichHartmann.com
 doi: "10.5281/zenodo.21235166"
 arxiv: "2607.07742"
-slug: "2026-Moebius-Faa-di-Bruno"
+slug: "DFDB"
 publications:
   pdf: "https://github.com/HeinrichHartmann/math/releases/download/2026-07-02-Discrete-Faa-di-Bruno-via-Moebius-Inversion/2026-07-02-Discrete-Faa-di-Bruno-via-Moebius-Inversion.pdf"
   GitHub: "https://github.com/HeinrichHartmann/math/releases/tag/2026-07-02-Discrete-Faa-di-Bruno-via-Moebius-Inversion"

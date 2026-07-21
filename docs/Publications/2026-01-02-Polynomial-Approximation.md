@@ -14,6 +14,7 @@ publications:
   pdf: "https://github.com/HeinrichHartmann/math/releases/download/2026-01-02-Polynomial-Approximation/2026-01-02-Polynomial-Approximation.pdf"
   GitHub: "https://github.com/HeinrichHartmann/math/releases/tag/2026-01-02-Polynomial-Approximation"
   Zenodo: "https://doi.org/10.5281/zenodo.18132526"
+description: "We prove density results for polynomials in continuous, $L^p$, $C^k$, and Sobolev spaces."
 hide:
   - navigation
 abstract: |

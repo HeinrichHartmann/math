@@ -16,6 +16,7 @@
           pandoc
           texlive.combined.scheme-full
           poppler_utils
+          awscli2
         ];
       };
     }
