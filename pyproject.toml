@@ -8,6 +8,7 @@ dependencies = [
     "mkdocs-material>=7.2.4",
     "pymdown-extensions>=10.16.1",
     "mkdocs-redirects>=1.2.2",
+    "mkdocs-awesome-pages-plugin>=2.9.0",
     "mkdocs-math @ git+https://github.com/HeinrichHartmann/mkdocs-math.git",
 ]
 

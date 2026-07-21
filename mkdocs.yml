@@ -29,11 +29,12 @@ extra:
 
 nav:
   - Publications:
-    - Publications/index.md
+    - ... | flat | Publications/**
   - Profile:
     - Profile/index.md
 
 plugins:
+  - awesome-pages
   - mkdocs-math:
       preamble_file: "docs/preamble.tex"
       bib_file: "meta/refs.bib"
