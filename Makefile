@@ -24,21 +24,20 @@ pdfs: $(addprefix pdf-,$(ARTICLES))
 # Release single article: make release-2025-07-26-Fundamental-Theorem-of-Algebra
 # Builds PDF, creates a GitHub release with title, abstract, and online link.
 release-%: pdf-%
-	$(eval STEM := $*)
 	$(UV) run python -c "\
-	import yaml, sys; \
-	content = open('$(ARTICLES_DIR)/$(STEM).md').read(); \
+	import yaml; \
+	content = open('$(ARTICLES_DIR)/$*.md').read(); \
 	meta = yaml.safe_load(content[3:content.find(chr(10)+'---', 3)]); \
-	title = meta.get('title', '$(STEM)'); \
+	title = meta.get('title', '$*'); \
 	abstract = meta.get('abstract', '').strip(); \
-	slug = meta.get('slug', '$(STEM)'); \
+	slug = meta.get('slug', '$*'); \
 	notes = abstract + chr(10) + chr(10) + '[Read online](https://heinrichhartmann.com/math/' + slug + ')'; \
-	print(title + chr(10) + notes)" > /tmp/release-meta.txt
-	$(eval TITLE := $(shell head -1 /tmp/release-meta.txt))
-	gh release create "$(STEM)" \
-		"$(PDF_DIR)/$(STEM).pdf" \
-		--title "$(TITLE)" \
-		--notes "$$(tail -n +2 /tmp/release-meta.txt)"
+	open('/tmp/release-title.txt','w').write(title); \
+	open('/tmp/release-notes.txt','w').write(notes)"
+	gh release create "$*" \
+		"$(PDF_DIR)/$*.pdf" \
+		--title "$$(cat /tmp/release-title.txt)" \
+		--notes "$$(cat /tmp/release-notes.txt)"
 
 clean:
 	rm -rf site/ build/
