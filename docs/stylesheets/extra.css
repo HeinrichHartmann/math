@@ -70,6 +70,193 @@ div.outline a {
   text-decoration: underline;
 }
 
+/* Elements metadata header - compact chip row separating semantic info from prose */
+.elements-metadata {
+  margin: 0.2rem 0 1.4rem 0;
+  font-size: 0.58rem;
+  line-height: 1.8;
+  opacity: 0.9;
+}
+
+.elements-metadata p {
+  margin: 0;
+}
+
+.elements-metadata span.el-kind,
+.elements-metadata span.el-status,
+.elements-metadata span.el-check,
+.elements-metadata a.el-check,
+.elements-metadata span.el-field {
+  display: inline-block;
+  padding: 0.05rem 0.55rem;
+  margin-right: 0.35rem;
+  border-radius: 1rem;
+  white-space: nowrap;
+}
+
+/* Kind chip - tinted background, colored text (muted) */
+.elements-metadata span.el-kind {
+  background-color: #eceff1;
+  color: #455a64;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.elements-metadata span.el-kind-definition { background-color: #e7eff9; color: #2e5f9e; }
+.elements-metadata span.el-kind-theorem { background-color: #f2eaf7; color: #6d4587; }
+.elements-metadata span.el-kind-proposition { background-color: #f3ecf8; color: #75519a; }
+.elements-metadata span.el-kind-lemma { background-color: #f4eef8; color: #7d5da2; }
+.elements-metadata span.el-kind-corollary { background-color: #f5edf7; color: #83559a; }
+.elements-metadata span.el-kind-environment { background-color: #e6f2f0; color: #2e6b62; }
+.elements-metadata span.el-kind-notation { background-color: #e6f1f3; color: #33717c; }
+.elements-metadata span.el-kind-example { background-color: #edf3e7; color: #5a7a3d; }
+
+/* Status chip - only shown for draft/superseded */
+.elements-metadata span.el-status {
+  background-color: #fdf6ec;
+  color: #b06c1e;
+  border: 1px solid #ecd4ae;
+  font-weight: 600;
+}
+.elements-metadata span.el-status-superseded {
+  background-color: #fbeeee;
+  color: #a04545;
+  border-color: #e0b4b4;
+}
+
+/* Verification checkmarks - muted green */
+.elements-metadata span.el-check,
+.elements-metadata a.el-check {
+  background-color: #f0f7f0;
+  color: #4a7350;
+  border: 1px solid #cfe2d0;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+/* Relation fields (uses / notation / published) - neutral */
+.elements-metadata span.el-field {
+  background-color: #f8f8f8;
+  color: #757575;
+  border: 1px solid #ebebeb;
+}
+.elements-metadata span.el-field a {
+  font-weight: 500;
+}
+
+/* Elements index listing — layout only; pills reuse .el-id, .el-kind, .el-check, .el-field */
+ul.el-index-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.el-index-item {
+  display: flex;
+  align-items: baseline;
+  gap: 0.3rem;
+  padding: 0.15rem 0;
+  font-size: 0.82rem;
+}
+
+li.el-index-item .el-id {
+  font-size: 0.85em;
+  padding: 0.02rem 0.4rem;
+}
+
+li.el-index-item .el-kind {
+  font-size: 0.75em;
+  padding: 0 0.35rem;
+}
+
+li.el-index-item .el-check,
+li.el-index-item .el-field {
+  font-size: 0.85em;
+  padding: 0.02rem 0.4rem;
+}
+
+a.el-index-title {
+  color: var(--md-default-fg-color);
+  text-decoration: none;
+}
+
+a.el-index-title:hover {
+  text-decoration: underline;
+}
+
+.el-index-right {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0.2rem;
+  margin-left: auto;
+  flex-shrink: 0;
+  padding-left: 0.5rem;
+}
+
+/* E-ID references - standardized system-link pills, recognizable everywhere */
+a.el-ref {
+  display: inline-block;
+  font-family: var(--md-code-font-family, monospace);
+  font-size: 0.85em;
+  font-weight: 500;
+  padding: 0 0.4em;
+  border-radius: 0.25rem;
+  background-color: #f4f6f8;
+  border: 1px solid #e3e7eb;
+  color: #4a6785;
+  white-space: nowrap;
+}
+a.el-ref:hover {
+  background-color: #e9eef3;
+  border-color: #c9d4de;
+}
+a.el-ref::before {
+  content: "⬡ ";
+  font-size: 0.85em;
+  opacity: 0.6;
+}
+
+/* Element ID badge - leads the metadata chip row, self-link */
+.elements-metadata .el-id {
+  display: inline-block;
+  font-family: var(--md-code-font-family, monospace);
+  font-weight: 600;
+  padding: 0.05rem 0.55rem;
+  margin-right: 0.35rem;
+  border-radius: 0.25rem;
+  background-color: #f4f6f8;
+  border: 1px solid #e3e7eb;
+  color: #4a6785;
+  white-space: nowrap;
+}
+.elements-metadata .el-id::before {
+  content: "⬡ ";
+  opacity: 0.6;
+}
+
+/* Article target badge - blog / paper / journal */
+span.article-target {
+  display: inline-block;
+  font-size: 0.55rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0 0.5rem;
+  border-radius: 1rem;
+  white-space: nowrap;
+  background-color: #eceff1;
+  color: #455a64;
+  line-height: 1.6;
+  vertical-align: text-bottom;
+}
+span.article-target-blog { background-color: #e6f1f3; color: #33717c; }
+span.article-target-paper { background-color: #f2eaf7; color: #6d4587; }
+span.article-target-journal { background-color: #e7eff9; color: #2e5f9e; }
+
+.article-target-row {
+  margin-bottom: 0.4rem;
+}
+
 /* Proof environments - collapsible */
 div.proof {
   cursor: pointer;
@@ -245,10 +432,7 @@ span.proof-arrow {
   }
 }
 
-/* Hide right TOC sidebar - force override Material theme's display:block */
-.md-sidebar--secondary {
-  display: none !important;
-}
+/* Right sidebar: visible for Elements (el-sidebar), hidden otherwise (empty TOC) */
 
 /* Expand content area with no max-width constraint */
 .md-content {
@@ -263,4 +447,10 @@ span.proof-arrow {
 /* Blockquote styling - keep text black, only indent and border */
 .md-typeset blockquote {
   color: var(--md-default-fg-color);
+}
+
+/* math-public: hide the right TOC sidebar except on Elements pages
+   (which render the Elements index there via overrides/partials/toc.html) */
+.md-sidebar--secondary:not(:has(.el-sidebar)) {
+  display: none !important;
 }

@@ -6,6 +6,7 @@ exclude_docs: |
 
 theme:
   name: material
+  custom_dir: overrides
   language: en
   palette:
     primary: black
@@ -30,6 +31,8 @@ extra:
 nav:
   - Publications:
     - ... | flat | Publications/**
+  - Elements:
+    - ... | Elements/**
   - Profile:
     - Profile/index.md
 
@@ -38,6 +41,8 @@ plugins:
   - mkdocs-math:
       preamble_file: "docs/preamble.tex"
       bib_file: "meta/refs.bib"
+      validation_url: "https://github.com/HeinrichHartmann/math/tree/main"
+      elements_published_pill: false  # everything here is published
   - redirects:
       redirect_maps:
         'index.md': 'Publications/index.md'

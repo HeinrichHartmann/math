@@ -1,0 +1,14 @@
+name = "elements"
+defaultTargets = ["Elements"]
+
+# Mathlib supplies Finset.powerset, sum_comm', sum_bij', prod_univ_sum,
+# Int.alternating_sum_range_choose, Finset.sum_powerset_neg_one_pow_card, etc.
+# `lake update` will fetch Mathlib and pin a compatible lean-toolchain
+# (overwriting the placeholder in ./lean-toolchain).
+[[require]]
+name = "mathlib"
+git = "https://github.com/leanprover-community/mathlib4"
+rev = "master"
+
+[[lean_lib]]
+name = "Elements"

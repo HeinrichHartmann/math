@@ -1,0 +1,168 @@
+{#- Elements sidebar (replaces Material's default TOC partial) -#}
+{% if elements_nav %}
+<nav class="el-sidebar elements-metadata" aria-label="Elements index">
+  <div class="el-sidebar-heading">{% if elements_nav.index_url %}<a href="{{ elements_nav.index_url }}" style="color: inherit; text-decoration: none;">Elements</a>{% else %}Elements{% endif %}</div>
+  {% for section in elements_nav.sections %}
+  {% set ns = namespace(is_current=false) %}
+  {% for node in section.nodes %}
+    {% if node.id == elements_nav.current_id %}{% set ns.is_current = true %}{% endif %}
+  {% endfor %}
+  <div class="el-sidebar-section{% if ns.is_current %} el-sidebar-section--open{% endif %}">
+    <details{% if ns.is_current %} open{% endif %}>
+      <summary class="el-sidebar-section-name">{% if section.index_url %}<a href="{{ section.index_url }}" class="el-sidebar-section-link">{{ section.name }}</a>{% else %}{{ section.name }}{% endif %}</summary>
+      <ul class="el-sidebar-list">
+        {% for node in section.nodes %}
+        <li class="el-sidebar-item{% if node.id == elements_nav.current_id %} el-sidebar-active{% endif %}{% if node.status == 'superseded' %} el-sidebar-superseded{% endif %}">
+          <a href="{{ node.url }}">
+            <span class="el-id">{{ node.id }}</span>
+            <span class="el-kind el-kind-{{ node.kind }}">{{ node.abbrev }}</span>
+            <span class="el-sidebar-title">{{ node.title }}</span>
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </details>
+  </div>
+  {% endfor %}
+</nav>
+
+<style>
+/* Widen the right sidebar for Elements pages */
+.md-sidebar--secondary { width: 19rem; }
+
+/* Elements right sidebar — inherits .elements-metadata pill styles */
+.el-sidebar {
+  font-size: 0.72rem;
+  line-height: 1.4;
+}
+
+.el-sidebar-heading {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--md-default-fg-color--light);
+  padding: 0 0.6rem 0.3rem;
+}
+
+.el-sidebar-section {
+  margin-bottom: 0.3rem;
+}
+
+.el-sidebar-section details {
+  margin: 0;
+}
+
+.el-sidebar-section-name {
+  font-size: 0.64rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--md-default-fg-color--lighter);
+  padding: 0.25rem 0.6rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+  cursor: pointer;
+  list-style: none;
+}
+
+.el-sidebar-section-name::-webkit-details-marker { display: none; }
+.el-sidebar-section-name::marker { display: none; content: ""; }
+
+.el-sidebar-section-name::before {
+  content: "\25B8";
+  font-size: 0.7em;
+  margin-right: 0.3em;
+  display: inline-block;
+  transition: transform 0.15s;
+}
+
+details[open] > .el-sidebar-section-name::before {
+  transform: rotate(90deg);
+}
+
+.el-sidebar-section-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.el-sidebar-section-link:hover {
+  text-decoration: underline;
+}
+
+.el-sidebar-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.el-sidebar-item a {
+  display: block;
+  padding: 0.2rem 0.6rem;
+  color: var(--md-default-fg-color--light);
+  text-decoration: none;
+  border-radius: 0.15rem;
+  transition: background-color 0.15s;
+}
+
+.el-sidebar-item a:hover {
+  background-color: var(--md-accent-fg-color--transparent);
+  color: var(--md-default-fg-color);
+}
+
+.el-sidebar-active a {
+  background-color: var(--md-accent-fg-color--transparent);
+  color: var(--md-default-fg-color);
+  font-weight: 500;
+}
+
+.el-sidebar-superseded a {
+  opacity: 0.5;
+  text-decoration: line-through;
+}
+
+/* Scale pills down for sidebar context */
+.el-sidebar .el-id {
+  font-size: 0.85em;
+  padding: 0 0.25rem;
+  margin-right: 0.05rem;
+}
+
+.el-sidebar .el-id::before { display: none; }
+
+.el-sidebar .el-kind {
+  font-size: 0.78em;
+  padding: 0 0.25rem;
+  margin-right: 0.05rem;
+}
+
+.el-sidebar-title {
+  color: inherit;
+}
+</style>
+
+{% else %}
+{#- Default TOC for non-Elements pages -#}
+{% import "partials/language.html" as lang with context %}
+{% set title = lang.t("toc") %}
+{% if config.mdx_configs.toc and config.mdx_configs.toc.title %}
+  {% set title = config.mdx_configs.toc.title %}
+{% endif %}
+<nav class="md-nav md-nav--secondary" aria-label="{{ title | e }}">
+  {% set toc = page.toc %}
+  {% set first = toc | first %}
+  {% if first and first.level == 1 %}
+    {% set toc = first.children %}
+  {% endif %}
+  {% if toc %}
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      {{ title }}
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      {% for toc_item in toc %}
+        {% include "partials/toc-item.html" %}
+      {% endfor %}
+    </ul>
+  {% endif %}
+</nav>
+{% endif %}
