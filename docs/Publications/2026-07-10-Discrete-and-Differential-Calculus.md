@@ -76,13 +76,13 @@ math:
     \newcommand{\wt}{\operatorname{wt}}
     \newcommand{\cstar}{\star_{\mathrm{cov}}}
     \newcommand{\pstar}{\star}
-doi: "10.5281/zenodo.21433565"
+doi: "10.5281/zenodo.21433564"
 publications:
-  pdf: "https://github.com/HeinrichHartmann/math/releases/download/2026-07-10-Discrete-and-Differential-Calculus/2026-07-10-Discrete-and-Differential-Calculus.pdf"
-  GitHub: "https://github.com/HeinrichHartmann/math/releases/tag/2026-07-10-Discrete-and-Differential-Calculus"
-  Zenodo: "https://doi.org/10.5281/zenodo.21433565"
+  pdf: "https://github.com/HeinrichHartmann/math/releases/download/2026-07-10-Discrete-and-Differential-Calculus-v2/2026-07-10-Discrete-and-Differential-Calculus.pdf"
+  GitHub: "https://github.com/HeinrichHartmann/math/releases/tag/2026-07-10-Discrete-and-Differential-Calculus-v2"
+  Zenodo: "https://doi.org/10.5281/zenodo.21433564"
 zenodo:
-  doi: 10.5281/zenodo.21433565
+  doi: 10.5281/zenodo.21433564
 ---
 
 ## Introduction
