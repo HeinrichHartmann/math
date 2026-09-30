@@ -270,39 +270,5 @@
 \DeclareMathOperator{\Map}{Map} % Mapping space #listed
 \DeclareMathOperator{\Pol}{Pol} % Polarization
 
-% ============================================
-% ENVIRONMENT SIDEBARS
-% Plain neutral-grey left rule on theorem-like environments,
-% marking structure without web-style color coding.
-% ============================================
-\usepackage{xcolor}
-\usepackage[framemethod=TikZ]{mdframed}
-\usepackage{booktabs} % pandoc emits \toprule/\midrule/\bottomrule for pipe tables
-
-\definecolor{envRule}{HTML}{666666}
-
-\mdfdefinestyle{envstyle}{%
-  linewidth=0.8pt,
-  topline=false,
-  bottomline=false,
-  rightline=false,
-  leftline=true,
-  leftmargin=-8pt,
-  rightmargin=0pt,
-  innerleftmargin=7.2pt,
-  innerrightmargin=0pt,
-  innertopmargin=0pt,
-  innerbottommargin=0pt,
-  skipabove=1em,
-  skipbelow=1em,
-  linecolor=envRule,
-}
-
-\surroundwithmdframed[style=envstyle]{theorem}
-\surroundwithmdframed[style=envstyle]{proposition}
-\surroundwithmdframed[style=envstyle]{lemma}
-\surroundwithmdframed[style=envstyle]{corollary}
-\surroundwithmdframed[style=envstyle]{definition}
-\surroundwithmdframed[style=envstyle]{example}
-\surroundwithmdframed[style=envstyle]{remark}
-\surroundwithmdframed[style=envstyle]{proof}
+% LaTeX-only styling (packages, layout, end marks) lives in preamble-pdf.tex
+% and is loaded only by the PDF export pipeline.
