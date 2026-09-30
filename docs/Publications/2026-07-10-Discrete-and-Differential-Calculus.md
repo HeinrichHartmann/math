@@ -69,7 +69,6 @@ orcid: "0000-0002-3929-2421"
 affiliation: "Hartmann IT GmbH"
 email: "Heinrich@HeinrichHartmann.com"
 hide:
-  - outline
   - navigation
 math:
   proof_style: expanded
